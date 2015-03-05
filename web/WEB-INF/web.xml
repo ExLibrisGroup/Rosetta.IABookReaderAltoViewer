@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>book-reader-viewer-alto</display-name>
+	<servlet>
+		<servlet-name>BookReaderViewerAlto</servlet-name>
+		<servlet-class>bookreader.viewer.BookReaderViewerAlto</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BookReaderViewerAlto</servlet-name>
+		<url-pattern>/BookReaderViewerAlto</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>BookReaderViewerAlto</welcome-file>
+	</welcome-file-list>
+
+	<context-param>
+		<param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+		<param-value>language</param-value>
+	</context-param>
+
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<servlet>
+		<servlet-name>AltoJAXBSearch</servlet-name>
+		<servlet-class>bookreader.viewer.AltoJAXBSearch</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AltoJAXBSearch</servlet-name>
+		<url-pattern>/AltoJAXBSearch/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AltoSAXSearch</servlet-name>
+		<servlet-class>bookreader.viewer.AltoSAXSearch</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AltoSAXSearch</servlet-name>
+		<url-pattern>/AltoSAXSearch/*</url-pattern>
+	</servlet-mapping>
+
+
+		<context-param>
+		<param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+		<param-value>language</param-value>
+	</context-param>
+
+</web-app>
