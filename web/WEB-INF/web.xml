@@ -18,11 +18,6 @@
 		<welcome-file>BookReaderViewerAlto</welcome-file>
 	</welcome-file-list>
 
-	<context-param>
-		<param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
-		<param-value>language</param-value>
-	</context-param>
-
 	<error-page>
 		<exception-type>java.lang.Throwable</exception-type>
 		<location>/error.jsp</location>
