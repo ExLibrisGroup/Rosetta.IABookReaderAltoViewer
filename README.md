@@ -1,6 +1,6 @@
-#Rosetta.IABookReaderAlto
+#Rosetta.IABookReaderAltoViewer
 
-IABookReader
+IABookReaderViewer
 ============
 For deployment instructions, see https://developers.exlibrisgroup.com/blog/rosetta_ia_bookreader_alto.
 
