@@ -59,7 +59,6 @@
 		<war destfile="${dist.dir}/${project.name}.war" webxml="${build.dir}/WEB-INF/web.xml">
 			<fileset dir="${build.dir}" />
 		</war>
-		<unzip src="${dist.dir}/${project.name}.war" dest="${project.name}.war"></unzip>
 	</target>
 
 </project>
